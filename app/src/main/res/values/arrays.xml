@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ucBuildings">
+        <item>1819IHUB</item>
+        <item>260EUNIV</item>
+        <item>2925CGD</item>
+        <item>60WCHARL</item>
+        <item>ALMS</item>
+        <item>ALUMNI CTR</item>
+        <item>ARMORY</item>
+        <item>ARONOFF</item>
+        <item>BA</item>
+        <item>BA ANNEX</item>
+        <item>BA CENTER</item>
+        <item>BA FLORY</item>
+        <item>BA HOUSE</item>
+        <item>BA MUNTZ</item>
+        <item>BA PROGRESS</item>
+        <item>BA VETEC</item>
+        <item>BA WALT</item>
+        <item>BALDWIN</item>
+        <item>BLEGEN</item>
+        <item>BRAUNSTEIN</item>
+        <item>CALHONGR</item>
+        <item>CALHOUN</item>
+        <item>CARE</item>
+        <item>CCHMC</item>
+        <item>CCSENSVCS</item>
+        <item>CENT HILL-A</item>
+        <item>CENT HILL-B</item>
+        <item>CENT HILL-C</item>
+        <item>CENT HILL-D</item>
+        <item>CENT REC</item>
+        <item>CENT UTIL</item>
+        <item>CINCYTECH</item>
+        <item>CLER ACTCTR</item>
+        <item>CLER JONES</item>
+        <item>CLER MCDONH</item>
+        <item>CLER SNYDER</item>
+        <item>CLER STUSVCS</item>
+        <item>CLER UCEAST1</item>
+        <item>CLER WWAC</item>
+        <item>CLERMONT</item>
+        <item>CLIFTNCTPAV</item>
+        <item>COMMONSN</item>
+        <item>COMMONSS</item>
+        <item>CORBETT</item>
+        <item>CROSLEY</item>
+        <item>CVC</item>
+        <item>DAAP</item>
+        <item>DABNEY</item>
+        <item>DANIELS</item>
+        <item>DRAKE</item>
+        <item>DVAC</item>
+        <item>EC UTILITIES</item>
+        <item>EDWARDS 1</item>
+        <item>EDWARDS 2</item>
+        <item>EDWARDS 3</item>
+        <item>EDWARDS 4</item>
+        <item>EMERY</item>
+        <item>ERC</item>
+        <item>EUCLID</item>
+        <item>FIFTH THIRD</item>
+        <item>FINDLAY</item>
+        <item>FISHWICK</item>
+        <item>FRENCH-EAST</item>
+        <item>FRENCH-WEST</item>
+        <item>GATEHS</item>
+        <item>GE</item>
+        <item>GEO-PHYS</item>
+        <item>HEALTH-UC</item>
+        <item>HENDERSONPK</item>
+        <item>HOXWORTH</item>
+        <item>HSB</item>
+        <item>KETTERING</item>
+        <item>KINGSGATE</item>
+        <item>KOWALEWS</item>
+        <item>LANGSAM</item>
+        <item>LAW</item>
+        <item>LINDHALL</item>
+        <item>LNDNRCTR</item>
+        <item>LOGAN</item>
+        <item>LVOAK-OC</item>
+        <item>MAB</item>
+        <item>MARKETPT</item>
+        <item>MCMICKEN</item>
+        <item>MEMORIAL</item>
+        <item>MORGENS</item>
+        <item>MRICENTER</item>
+        <item>MSB</item>
+        <item>MSB SERV</item>
+        <item>MSPENCER</item>
+        <item>OLD CHEM</item>
+        <item>PAVECNED</item>
+        <item>PDC-OC</item>
+        <item>PROCTER</item>
+        <item>RC</item>
+        <item>RCA</item>
+        <item>RACANNEX</item>
+        <item>RCB</item>
+        <item>RCC</item>
+        <item>RCD</item>
+        <item>RCE</item>
+        <item>RCF</item>
+        <item>RCG</item>
+        <item>RCJ</item>
+        <item>RECCENTER</item>
+        <item>RHODES</item>
+        <item>RIEVESCHL</item>
+        <item>ROLLMANS</item>
+        <item>RSL</item>
+        <item>SCHNEIDR</item>
+        <item>SCHOTT</item>
+        <item>SCIOTO</item>
+        <item>SERV GARAGE</item>
+        <item>SHOEMAKER</item>
+        <item>SHRINERS</item>
+        <item>SIDDALL</item>
+        <item>SRU</item>
+        <item>STADIUM</item>
+        <item>STEGER</item>
+        <item>STETSON</item>
+        <item>STRATFORD1</item>
+        <item>STRATFORD2</item>
+        <item>STRATFORD3</item>
+        <item>STRATFORD4</item>
+        <item>STRATFORD5</item>
+        <item>STRATFORD8</item>
+        <item>STRATFORD9</item>
+        <item>STRATFORD10</item>
+        <item>STRATFORD11</item>
+        <item>STRATFORD12</item>
+        <item>STRATFORD13</item>
+        <item>STRATFORD14</item>
+        <item>STRATFORD15</item>
+        <item>STRATFORD16</item>
+        <item>STRATFORD17</item>
+        <item>STRATFORD18</item>
+        <item>STRATFORD19</item>
+        <item>STRATFORD20</item>
+        <item>STRATFOR21</item>
+        <item>STRATFORDHTS</item>
+        <item>SWIFT</item>
+        <item>TEACHER-DYER</item>
+        <item>TUC</item>
+        <item>TURNER</item>
+        <item>UCEAST2</item>
+        <item>UCHEALTH</item>
+        <item>UCMC</item>
+        <item>UCMC-BARRETT</item>
+        <item>UCMC-HOLMES</item>
+        <item>UCMC-MT REID</item>
+        <item>UNIPKAPTN</item>
+        <item>UNIPKAPTS</item>
+        <item>UNIV HALL</item>
+        <item>UNIV PAV</item>
+        <item>USQUARE</item>
+        <item>VAMC</item>
+        <item>VANWORMR</item>
+        <item>VICTORY PKWY</item>
+        <item>VONTZ</item>
+        <item>VPC</item>
+        <item>VPCADMIN</item>
+        <item>VPCCLASS</item>
+        <item>VPCLIBRY</item>
+        <item>VPCNLAB</item>
+        <item>VPCSCIEN</item>
+        <item>WCMC</item>
+        <item>WHERRY</item>
+        <item>WOLFSON</item>
+        <item>ZIMMER</item>
+
+
+    </string-array>
+</resources>

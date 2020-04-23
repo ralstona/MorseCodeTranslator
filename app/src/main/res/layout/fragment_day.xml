@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartDate">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/acTxtBldgs"
+            android:layout_width="172dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="52dp"
+            android:text="Buildings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edTxtRoom"
+            android:maxLength="10"
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Room Number"
+            app:layout_constraintStart_toEndOf="@+id/acTxtBldgs"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edTxtStartTime"
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="108dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Start Time"
+            app:layout_constraintBottom_toTopOf="@+id/btnDone"
+            app:layout_constraintEnd_toStartOf="@+id/edTxtEndTime"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acTxtBldgs"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:id="@+id/edTxtEndTime"
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="116dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="End Time"
+            app:layout_constraintBottom_toTopOf="@+id/btnDone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edTxtStartTime"
+            app:layout_constraintTop_toBottomOf="@+id/edTxtRoom"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finished"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edTxtRoom"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnDone"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acTxtBldgs"
+            app:layout_constraintVertical_bias="0.501" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UCRouteAssistant</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_test_scheduler">SchedulerActivity</string>
+    <string name="checkbox_warning">Click Edit to edit the information associated with this day. Otherwise, click Delete to remove the day.</string>
+    <string name="edit_day_info">Edit</string>
+    <string name="remove_day">Delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

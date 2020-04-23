@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edTxtCourseName"
+        android:maxLength="20"
+        android:gravity="center"
+        android:hint="Course Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edTxtEndDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <EditText
+        android:id="@+id/edTxtStartDate"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:gravity = "center"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Semester Start Date"
+        app:layout_constraintEnd_toStartOf="@+id/edTxtEndDate"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtCourseName" />
+
+    <EditText
+        android:id="@+id/edTxtEndDate"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Semester End Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edTxtStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtCourseName" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtCourseName"
+        app:layout_constraintVertical_bias="0.813" />
+
+    <CheckBox
+        android:id="@+id/cbMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="67dp"
+        android:text="Monday"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toStartOf="@+id/cbTuesday"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtStartDate"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <CheckBox
+        android:id="@+id/cbTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="67dp"
+        android:text="Tuesday"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toStartOf="@+id/cbWednesday"
+        app:layout_constraintStart_toEndOf="@+id/cbMonday"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtEndDate"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <CheckBox
+        android:id="@+id/cbWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="67dp"
+        android:text="Wednesday"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/cbTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtEndDate"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <CheckBox
+        android:id="@+id/cbThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginStart="88dp"
+        android:text="Thursday"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toStartOf="@+id/cbFriday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMonday" />
+
+    <CheckBox
+        android:id="@+id/cbFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="108dp"
+        android:layout_marginStart="26dp"
+        android:text="Friday"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbThursday"
+        app:layout_constraintTop_toBottomOf="@+id/cbWednesday" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/places_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtCourseName"
+        app:layout_constraintVertical_bias="0.813" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

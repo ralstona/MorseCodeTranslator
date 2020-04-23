@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <TextView
+        android:id="@+id/txtCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginTop="44dp"
+        android:text="Course Name"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="36dp"
+        android:text="Start Date"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/txtEndDate"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblStartDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="36dp"
+        android:text="End Date"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabelEndDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="206dp">
+
+            <TextView
+                android:id="@+id/txtLblDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/labelbackground"
+                android:gravity="center"
+                android:text="Day"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="380dp" />
+
+            <TextView
+                android:id="@+id/txtLblBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/labelbackground"
+                android:gravity="center"
+                android:text="Building"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="446dp" />
+
+            <TextView
+                android:id="@+id/txtLblRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/labelbackground"
+                android:gravity="center"
+                android:text="Room Num"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtLblStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/labelbackground"
+                android:gravity="center"
+                android:text="Start Time"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="151dp" />
+
+            <TextView
+                android:id="@+id/txtLblEndTime"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/labelbackground"
+                android:gravity="center"
+                android:text="End time"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="263dp"
+                tools:layout_editor_absoluteY="151dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Monday"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtMonBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtMonRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtMonStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtMonEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteY="254dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtTueday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Tuesday"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtTueBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtTueRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtTueStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtTueEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteY="254dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="8dp"
+                android:text="Wednesday"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtWedBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtWedRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtWedStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtWedEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteY="254dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Thursday"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtThuBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtThuRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtThuStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtThuEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteY="254dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:text="Friday"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtFriBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/txtFriRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtFriStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <TextView
+                android:id="@+id/txtFriEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                tools:layout_editor_absoluteY="254dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtLblCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:text="Course Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtCourseName"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLblStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Start Date"
+        app:layout_constraintEnd_toStartOf="@+id/txtLabelEndDate"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblCourseName" />
+
+    <TextView
+        android:id="@+id/txtLabelEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="36dp"
+        android:text="End Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCourseName" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEdit"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.882" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
